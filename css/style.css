@@ -1,0 +1,600 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+  --cor-de-fundo: #fff;
+  --cor-preto-escuro: #0d0d0d;
+  --cor-cinza-claro: #f2f2f2;
+  --cor-cinza-medio: #d9d9d9;
+  --cor-cinza-escuro: #858585;
+  --fonte-primaria: "Oswald", sans-serif;
+  --fonte-secundaria: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+/*👉
+PRIMEIRA DOBRA👈*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_lista {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em 2em;
+  gap: 2em;
+}
+
+.itens_menu {
+  text-decoration: none;
+  padding: 3em 3em 1em 3em;
+  font-size: 16px;
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  color: var(--cor-preto-escuro);
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: var(--cor-cinza-claro);
+  border-radius: 20px;
+}
+
+.aum-fonte {
+  transition: 0.5s;
+}
+
+.aum-fonte:hover {
+  font-size: 24px;
+  color: var(--cor-de-fundo);
+  background-color: var(--cor-preto-escuro);
+}
+
+.banner-inicial {
+  margin: 10% 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: var(--fonte-primaria);
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.banner-sub-titulo {
+  font-size: 40px;
+  font-family: var(--fonte-secundaria);
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-left: 5%;
+}
+
+.btn-cta {
+  background-color: var(--cor-cinza-claro);
+  border: 1px solid var(--cor-preto-escuro);
+  color: var(--cor-preto-escuro);
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 1%;
+  margin: 2% 5%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.vira-preto {
+  transition: 0.5s;
+}
+
+.vira-preto:hover {
+  background-color: var(--cor-preto-escuro);
+  color: var(--cor-de-fundo);
+
+  /* FIXE-ME: 👉transition: margin-left 2em 2s;👈*/
+}
+
+.circulo-root-img {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  z-index: -1000;
+  animation: rotate 15s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0.6) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.6) rotate(360deg);
+  }
+}
+
+/*👉SERVICOS👈*/
+
+.servicos {
+  background-color: var(--cor-preto-escuro);
+  margin: 5% 1% 1% 1%;
+  padding: 4%;
+  border-radius: 20px;
+}
+
+.servicos-empresa {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.servicos-empresa-descricao {
+  font-family: var(--fonte-secundaria);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--cor-cinza-claro);
+  line-height: 1.5em;
+  width: 70%;
+}
+
+.img-pc {
+}
+
+.servicos-titulo {
+  font-family: var(--fonte-primaria);
+  font-size: 48px;
+  color: var(--cor-de-fundo);
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.servicos-empresa-tipos {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.servicos_tipo {
+  background-color: var(--cor-de-fundo);
+  border-radius: 20px;
+  padding: 2%;
+  width: 50%;
+}
+
+.servicos_tipo h3 {
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  font-size: 32px;
+  padding: 1%;
+  line-height: 1.5em;
+}
+
+.servicos_tipo h4 {
+  font-family: var(--fonte-secundaria);
+  font-weight: 500;
+  font-size: 24px;
+  padding: 1%;
+  line-height: 1.5em;
+}
+
+.servicos_tipo p {
+  font-family: var(--fonte-secundaria);
+  font-weight: 300;
+  font-size: 18px;
+  padding: 1%;
+  line-height: 1.5em;
+}
+
+/*👉
+WEB PARA TODOS👈*/
+
+.web-para-todos {
+  font-family: var(--fonte-primaria);
+  font-size: 180px;
+  font-weight: 700;
+  padding: 5%;
+}
+
+span:hover {
+  font-size: 110%;
+  font-family: var(--fonte-secundaria);
+  font-weight: 300;
+  transition: ease 0.3s;
+}
+
+/*👉
+POR QUE A ROOT?👈*/
+
+.pq-root {
+  background-color: var(--cor-preto-escuro);
+  margin: 5% 1% 1% 1%;
+  border-radius: 20px;
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.pq-root-intro {
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pq-root-titulo {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-de-fundo);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.img-check {
+  opacity: 50%;
+}
+
+.pq-root-arg {
+  width: 50%;
+  padding: 2%;
+}
+
+.pq-root-arg-itens {
+  background-color: var(--cor-cinza-escuro);
+  font-family: var(--fonte-primaria);
+  color: var(--cor-cinza-claro);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.vira-branco {
+  transition: 0.3s;
+}
+
+.vira-branco:hover {
+  background-color: var(--cor-cinza-claro);
+  color: var(--cor-preto-escuro);
+}
+
+#paragrafo-expandir {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#conteudo-expansao {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.texto-expandido {
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--cor-preto-escuro);
+  background-color: var(--cor-de-fundo);
+  margin: 1em;
+  padding: 1em;
+
+  width: 100%;
+}
+
+.simb-expandir {
+}
+
+/*👉
+BANNER FINAL👈*/
+
+.banner-final {
+  margin: 10% 0;
+}
+
+.banner-final-titulo {
+  font-size: 60px;
+  font-family: var(--fonte-primaria);
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.banner-final-subtitulo {
+  font-size: 24px;
+  font-family: var(--fonte-secundaria);
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 1% 5%;
+  width: 50%;
+}
+
+/*👉
+FOOTER👈*/
+
+footer {
+  background-color: var(--cor-preto-escuro);
+  color: var(--cor-cinza-claro);
+  margin: 1% 1% 0 1%;
+  padding: 2% 4% 1% 4%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-family: var(--fonte-secundaria);
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+/*MEDIA QUERY*/
+
+/*👉Versão Desktop👈*/
+
+@media screen and (min-width: 1800px) {
+  .banner-inicial {
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  .banner-sub-titulo {
+    font-size: 40px;
+  }
+
+  /*👉
+SERVICOS👈*/
+
+  .servicos-empresa-descricao {
+    font-size: 40px;
+  }
+
+  .img-pc {
+  }
+
+  .servicos-titulo {
+    font-size: 64px;
+  }
+
+  .servicos_tipo h3 {
+    font-size: 48px;
+  }
+
+  .servicos_tipo h4 {
+    font-size: 30px;
+  }
+
+  .servicos_tipo p {
+    font-size: 24px;
+  }
+
+  /*👉
+  BANNER FINAL👈*/
+
+  .banner-final {
+    margin-bottom: 0%;
+    margin-top: 15%;
+  }
+
+  .banner-final-titulo {
+    font-size: 80px;
+  }
+
+  .banner-final-subtitulo {
+    font-size: 40px;
+  }
+
+  footer {
+    margin-top: 8%;
+  }
+
+  .logo-branca {
+    transform: scale(0.5);
+    margin-bottom: -1%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .banner-inicial {
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .banner-sub-titulo {
+    font-size: 32px;
+  }
+
+  footer {
+    padding: 0% 4% 1% 4%;
+  }
+
+  footer p {
+    margin-top: 0;
+    font-size: 10px;
+  }
+
+  .banner-final {
+    margin-bottom: 0%;
+  }
+
+  .logo-branca {
+    transform: scale(0.5);
+    margin-bottom: -1%;
+  }
+}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+}
+
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .logo {
+    transform: scale(0.7);
+    width: 20%;
+  }
+
+  .itens_menu {
+    padding: 1em;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .banner-inicial {
+    margin: 40% 2% 20% 2%;
+  }
+
+  h1 {
+    font-size: 48px;
+    width: 90%;
+  }
+
+  .banner-sub-titulo {
+    font-size: 32px;
+    margin: 5% 0 5% 5%;
+  }
+
+  .btn-cta {
+    font-size: 24px;
+    width: 70%;
+  }
+
+  .circulo-root {
+    display: none;
+  }
+
+  /*👉
+SERVICOS👈*/
+
+  .servicos {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  .servicos-empresa-descricao {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .servicos-empresa-tipos {
+    flex-direction: column;
+  }
+
+  .servicos_tipo {
+    width: 100%;
+  }
+
+  .web-para-todos {
+    font-size: 100px;
+    margin-bottom: 20%;
+  }
+
+  /*👉
+  POR QUE ROOT?👈*/
+
+  .pq-root {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .pq-root-intro {
+    width: 100%;
+  }
+
+  .pq-root-titulo {
+    font-size: 60px;
+    margin-bottom: 0%;
+  }
+
+  .pq-root-arg {
+    width: 100%;
+  }
+
+  .pq-root-arg-itens {
+    margin-left: 0;
+  }
+
+  /*👉
+BANNER FINAL👈*/
+
+  .banner-final {
+    margin: 70% 0 20% 0;
+  }
+
+  .banner-final-titulo {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .banner-final-subtitulo {
+    font-size: 20px;
+    width: 90%;
+    margin: 5%;
+  }
+
+  /*👉
+  FOOTER👈*/
+  .logo-branca {
+    transform: scale(0.5);
+    margin-bottom: 0;
+  }
+
+  footer p {
+    font-size: 10px;
+    margin-top: 0;
+  }
+}
